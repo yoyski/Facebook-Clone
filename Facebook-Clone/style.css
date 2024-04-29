@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  background-color: #F0F2F5;
+}
+
+.main-container{
+  margin-top: 135px;
+}
+
+.main{
+  display: flex;
+}
+
+.left-side{
+  display: flex;
+  flex: 1;
+}
+
+.fb-line{
+  margin-left: 40px;
+  margin-right: 80px;
+  margin-top: 70px;
+}
+
+.fb-logo{
+  width: 265px;
+}
+
+.fb-line .line{
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  align-items:flex-start;
+}
+
+.fb-login{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  row-gap: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 26px;
+  border-radius: 7px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.341);
+}
+
+.login .email-phone,
+.login .password{
+  height: 46px;
+  width:358px;
+  border-radius: 7px;
+  border: 1px solid rgb(221,223,226);
+  outline: 0;
+  text-indent: 15px;
+  font-size: 16px;
+}
+
+.login .email-phone::placeholder,
+.login .password::placeholder{
+  text-indent: 15px;
+  font-size: 16px;
+}
+
+.login .email-phone:hover,
+.login .password:hover{
+  border: 1px solid #0866ff;
+  box-shadow: 0px 0px 0px 0.7px rgba(81, 177, 209, 0.709);
+}
+
+.login .login-btn{
+  height: 48px;
+  width: 360;
+  background-color: #1877F2;
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+.login{
+  display: grid;
+  border-bottom: 1px solid rgb(221,223,226);
+  row-gap: 13px;
+  text-align: center;
+}
+
+p{
+  margin: 0;
+  margin-top: 2px;;
+  font-size: 14px;
+  color: rgb(30,123,243);
+  margin-bottom: 25px;
+}
+
+button{
+  background-color: #42B72A;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  width: 190px;
+  height: 48px;
+  margin-top: 15px;
+}
+
+@media(max-width: 920px){
+
+  .left-side{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+
+  .fb-line{
+    margin: 0;
+    margin-bottom: 5px;;
+    width: 395px;
+  }
+
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .right-side{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .main-container{
+    margin-top: 95px;
+  }
+  
+}

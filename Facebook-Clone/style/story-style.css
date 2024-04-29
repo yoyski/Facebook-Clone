@@ -1,0 +1,91 @@
+#my-day-container{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  width: fit-content;
+}
+
+.story{
+  background-color: white;
+  width: 140px;
+  height: 240px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(70, 69, 69);
+}
+
+.profile{
+  width: 140px;
+  height: 190px;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  filter: brightness(0.8);
+}
+
+.create-story-icon{
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 30px;
+}
+
+
+.create-story{
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  bottom: 9px;
+}
+
+.day-story{
+  width: 140px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter:blur(0.5px)
+}
+
+.name{
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  bottom: 9px;
+  left: 10px;
+}
+
+.border{
+  background-color: #0855d1;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
+}
+
+.profile-pic{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-picture-container{
+  position: relative;
+}
+
+.active-status{
+  position: absolute;
+  background-color: green;
+  width: 8px;
+  height:  8px;
+  border-radius: 50%;
+  border: 2px solid white;
+  bottom: 0px;
+  right: -5px;
+}
